@@ -49,7 +49,7 @@ No media query for `xs` since this is the default in Bootstrap
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  cursor: url("../assets/temp/up-cursor.png"), auto !important;
+ 
 }
 
 *,
@@ -71,14 +71,15 @@ html {
 /* Design variables refer to CSS variables that store specific design elements, such as colors and typography, which can be utilized throughout a website. Instead of individually modifying each CSS element, designers can quickly make changes by using design variables. Adjust the variables below, create new variables as desired, and delete the variables that you do not want to use. */
 
 :root {
-  --body-typeface: "Inter", sans-serif;
+  --body-typeface: "Open Sans", sans-serif;
+
   --heading-typeface: 'Open Sans', sans-serif;
   --project-title-typeface: 'Croissant One', cursive;
   --background-color: #0f0f0f;
   --background-color-about: #0f0f0f;
   --background-color-footer: #0f0f0f;    
   --alt-background-color: #000000;
-  --background-color-holding-page: rgba(82, 0, 255,0.6);
+  --background-color-holding-page: 0f0f0f;
   --h1-color: #ffffff;
   --h2-color: #ffffff;
   --h3-color: #ffffff;
@@ -92,13 +93,13 @@ html {
   --overlay-title-color: #ffffff;
   --overlay-description-color: #ffffff;
   --hyperlink-color: #FF47C2;
-  --hyperlink-alternate-color: C5A6F9;
+  --hyperlink-alternate-color: #C5A6F9;
   --hover-color: #50A9FF;
   --visited-color: #FF47C2;
   --project-title-color: #50A9FF;
   --project-sidebar-background-color: 0f0f0f;
   --project-sidebar-text-color: white;
-  --heart-color: darkred;
+  --heart-color: #FF47C2;
   --holding-page-footer-color: #0f0f0f;
   --text-selection-background-color: #000000;
   --linear-gradient-color-1: #ff057c;
@@ -204,7 +205,7 @@ em {
 }
 
 .project-title {
-  font-size: 3.725rem;
+  font-size: 3rem;
   font-family: var(--project-title-typeface);
   color: var(--project-title-color);
   margin-bottom: 1rem;
@@ -338,7 +339,7 @@ a:active {
   flex: 1;
   align-items: center;
   justify-content: center;
-  padding: 2rem 4rem;
+  padding: 4rem 8rem;
   text-align: center;
 }
 
