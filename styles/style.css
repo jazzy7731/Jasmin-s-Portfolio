@@ -754,15 +754,107 @@ a:active {
   place-items: center;
 }
 
-.play-page-wrapper {
-}
-
 .play-page-inner-container {
   text-align: center;
 }
 
 .play-page-title {
   color: var(--accent-color);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 2.22222222vh;
+  padding: 3.5vh 3.5vh 3.5vh 3.5vh;
+  /* place-items: center; */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(42, 1fr);
+    grid-template-rows: repeat(66, 2.06666666666vh);
+    padding: 2rem;
+  }
+}
+
+/* LARGE
+DEVICES
+(desktops, 1000px and up) */
+@media (min-width: 1000px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(42, 1fr);
+    grid-template-rows: repeat(121, 2.06666666666vh);
+    padding: 2.3rem;
+    /* Top Right Bottom Left */
+  }
+  .playground-1 {
+    grid-column: 5/13;
+    grid-row: 5/19;
+  }
+  .playground-2 {
+    grid-column: 8/16;
+    grid-row: 5/19;
+  }
+  .playground-3 {
+    grid-column: 12/20;
+    grid-row: 5;
+  }
+  .playground-4 {
+    grid-column: 26/37;
+    grid-row: 3;
+  }
+  .playground-5 {
+    grid-column: 22/30;
+    grid-row: 28;
+  }
+  .playground-6 {
+    grid-column: 17/25;
+    grid-row: 31;
+  }
+  .playground-7 {
+    grid-column: 21/29;
+    grid-row: 41;
+  }
+  .playground-8 {
+    grid-column: 4/13;
+    grid-row: 30;
+  }
+  .playground-9 {
+    grid-column: 4/13;
+    grid-row: 46;
+  }
+  .playground-10 {
+    grid-column: 4/13;
+    grid-row: 62;
+  }
+  .playground-11 {
+    grid-column: 4/13;
+    grid-row: 78;
+  }
+  .playground-12 {
+    grid-column: 32/40;
+    grid-row: 33;
+  }
+  .playground-13 {
+    grid-column: 17/27;
+    grid-row: 62;
+  }
+  .playground-14 {
+    grid-column: 30/40;
+    grid-row: 67;
+  }
+  .playground-15 {
+    grid-column: 4/20;
+    grid-row: 96;
+  }
+  .playground-16 {
+    grid-column: 26/42;
+    grid-row: 99;
+  }
 }
 
 /*
@@ -1032,17 +1124,3 @@ a.sub-navigation-link:hover {
 /* Only add styles below to make very minor adjustments for extra or extra-extra large devices */
 
 /* X-Large devices (large desktops, 1200px and up)*/
-
-@media (min-width: 1200px) {
-  body {
-    background: lightyellow;
-  }
-}
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-
-@media (min-width: 1400px) {
-  body {
-    background: #0f0f0f;
-  }
-}
