@@ -386,6 +386,19 @@ a:active {
   align-items: flex-start;
 }
 
+.navbar1 {
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+.navbar2 {
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  bottom: 0; /* Position the navbar at the bottom of the page */
+  width: 100%; /* Full width */
+}
+
 .logo {
   padding-top: 5px;
   width: 3rem;
@@ -499,7 +512,6 @@ a:active {
   width: auto;
   white-space: nowrap;
   font-size: 12px;
-  background-color: black;
   color: white;
   padding: 2px 6px;
   border-radius: 2px;
@@ -1056,7 +1068,7 @@ a.sub-navigation-link:hover {
   }
 
   .hero {
-    min-height: 89vh;
+    min-height: 93vh;
   }
 
   .hero-headline-wrapper {
