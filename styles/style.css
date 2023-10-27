@@ -386,19 +386,6 @@ a:active {
   align-items: flex-start;
 }
 
-.navbar1 {
-  overflow: hidden;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-}
-.navbar2 {
-  overflow: hidden;
-  position: fixed; /* Set the navbar to fixed position */
-  bottom: 0; /* Position the navbar at the bottom of the page */
-  width: 100%; /* Full width */
-}
-
 .logo {
   padding-top: 5px;
   width: 3rem;
@@ -561,7 +548,7 @@ input {
 
 .about {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 2fr;
   grid-gap: 3rem;
   background: var(--background-color-about);
   padding: 1rem;
@@ -569,23 +556,12 @@ input {
 }
 
 .about-item-1 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
+  grid-column: 1;
 }
 
 .about-item-2 {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-}
-
-.about-item-3 {
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
-}
-
-.about-item-4 {
-  grid-column: 1 / 2;
-  grid-row: 4 / 5;
+  padding-top: 4rem;
+  grid-column: 2/4;
 }
 
 /* Global Footer
@@ -1068,7 +1044,7 @@ a.sub-navigation-link:hover {
   }
 
   .hero {
-    min-height: 93vh;
+    min-height: 80vh;
   }
 
   .hero-headline-wrapper {
@@ -1092,7 +1068,7 @@ a.sub-navigation-link:hover {
 
   .about {
     padding: 4rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .global-footer {
@@ -1101,8 +1077,12 @@ a.sub-navigation-link:hover {
   }
 
   .about-item-1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    grid-column: 1;
+  }
+
+  .about-item-2 {
+    padding-top: 4rem;
+    grid-column: 2/4;
   }
 
   .footer-item-1 {
@@ -1110,31 +1090,14 @@ a.sub-navigation-link:hover {
     grid-row: 1 / 2;
   }
 
-  .about-item-2 {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-  }
-
   .footer-item-2 {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
   }
 
-  .about-item-3 {
-    grid-row: 1 / 2;
-    grid-column: 3 / 4;
-  }
-
   .footer-item-3 {
     grid-row: 1 / 2;
     grid-column: 3 / 4;
-  }
-
-  .about-item-4 {
-    grid-row: 2 / 3;
-    grid-column: 1 / 4;
-    text-align: center;
-    align-self: end;
   }
 
   .footer-item-4 {
