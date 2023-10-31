@@ -202,7 +202,9 @@ em {
 }
 
 .hero-headline {
-  color: var(--overlay-color);
+  font-family: var(--body-typeface);
+  font-size: 1.5rem;
+  line-height: 1.4;
 }
 
 .project-title {
