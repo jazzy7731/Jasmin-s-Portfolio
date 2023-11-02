@@ -203,7 +203,7 @@ em {
 
 .hero-headline {
   font-family: var(--body-typeface);
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.4;
 }
 
@@ -393,18 +393,13 @@ a:active {
   align-items: flex-start;
 }
 
-.logo {
-  padding-top: 5px;
-  width: 3rem;
-}
-
 .hero-headline-wrapper {
   display: flex;
   flex-direction: column;
   flex: 1;
   align-items: center;
   justify-content: center;
-  padding: 4rem 10rem;
+  padding: 4rem 2rem;
   text-align: center;
 }
 
@@ -440,6 +435,16 @@ a:active {
 
 .work-wrapper {
   flex: 1;
+}
+
+/* Grayscale filter with full-colour on hover and tap */
+.work-page-grid-item a.grayscale img {
+  filter: grayscale(100);
+}
+
+.work-page-grid-item > a.grayscale:active img,
+.work-page-grid-item > a.grayscale:hover img {
+  filter: grayscale(0);
 }
 
 /* Padding around work grid and project page */
@@ -653,7 +658,6 @@ input {
 .project-aside {
   width: 100%;
   padding: 3rem;
-  padding-left: 4.5rem;
   display: flex;
   flex-direction: column;
   color: var(--project-sidebar-text-color);
@@ -666,6 +670,12 @@ input {
   align-items: center;
   flex: 1;
   justify-content: center;
+}
+
+.arrow-navigation {
+  padding-top: 2rem;
+  justify-content: center;
+  padding-right: 1rem;
 }
 
 .arrow {
@@ -681,8 +691,6 @@ input {
 
 .project-image {
   width: 100%;
-  min-height: 50vh;
-  /* min-height should be deleted if you want to remove space between project images on project pages */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -940,16 +948,116 @@ a.sub-navigation-link:hover {
 ██      ██ ███████ ██████  ██ ██   ██      ██████   ██████  ███████ ██   ██ ██ ███████ ███████ 
 
 */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(85, 2.06666666666vh);
+  padding: 2.3rem;
+  /* Top Right Bottom Left */
+}
+.playground-1 {
+  grid-column: 5/11;
+  grid-row: 3;
+}
+.playground-2 {
+  grid-column: 8/14;
+  grid-row: 3;
+}
+.playground-3 {
+  grid-column: 11/17;
+  grid-row: 3;
+}
+.playground-4 {
+  grid-column: 12/19;
+  grid-row: 17;
+}
+.playground-5 {
+  grid-column: 14/29;
+  grid-row: 26;
+}
+.playground-6 {
+  grid-column: 12/17;
+  grid-row: 29;
+}
+.playground-7 {
+  grid-column: 13/18;
+  grid-row: 32;
+}
+.playground-8 {
+  grid-column: 3/11;
+  grid-row: 15;
+}
+.playground-9 {
+  grid-column: 3/11;
+  grid-row: 24;
+}
+.playground-10 {
+  grid-column: 3/11;
+  grid-row: 33;
+}
+.playground-11 {
+  grid-column: 3/11;
+  grid-row: 42;
+}
+.playground-12 {
+  grid-column: 12/19;
+  grid-row: 42;
+}
+.playground-13 {
+  grid-column: 3/10;
+  grid-row: 51;
+}
+.playground-14 {
+  grid-column: 12/19;
+  grid-row: 59;
+}
+.playground-15 {
+  grid-column: 4/15;
+  grid-row: 70;
+}
+.playground-16 {
+  grid-column: 8/18;
+  grid-row: 79;
+}
+.logo {
+  padding-top: 5px;
+  width: 2rem;
+}
+.hero-headline-wrapper {
+  padding: 4rem 2rem;
+}
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+/* Medium devices (tablets, 500px and up) */
+
+@media (min-width: 500px) {
   .grid-container {
     display: grid;
     grid-template-columns: repeat(42, 1fr);
     grid-template-rows: repeat(66, 2.06666666666vh);
     padding: 2rem;
   }
+  .project-aside {
+    width: 100%;
+    padding: 3rem;
+    padding-left: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    color: var(--project-sidebar-text-color);
+    background: var(--project-sidebar-background-color);
+  }
 
+  .hero-headline-wrapper {
+    padding: 4rem 7rem;
+  }
+  .hero-headline {
+    font-size: 1rem;
+  }
+
+  .arrow-navigation {
+    padding-top: 2rem;
+    justify-content: center;
+    padding-right: 2rem;
+  }
   .about {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -969,14 +1077,86 @@ a.sub-navigation-link:hover {
     grid-column: 1/6;
     grid-row: 2/3;
   }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(121, 2.06666666666vh);
+    padding: 2.3rem;
+    /* Top Right Bottom Left */
+  }
+  .playground-1 {
+    grid-column: 4/10;
+    grid-row: 5/18;
+  }
+  .playground-2 {
+    grid-column: 7/13;
+    grid-row: 5/18;
+  }
+  .playground-3 {
+    grid-column: 10/16;
+    grid-row: 5;
+  }
+  .playground-4 {
+    grid-column: 19/28;
+    grid-row: 3;
+  }
+  .playground-5 {
+    grid-column: 19/25;
+    grid-row: 20;
+  }
+  .playground-6 {
+    grid-column: 15/21;
+    grid-row: 23;
+  }
+  .playground-7 {
+    grid-column: 17/23;
+    grid-row: 27;
+  }
+  .playground-8 {
+    grid-column: 4/12;
+    grid-row: 21;
+  }
+  .playground-9 {
+    grid-column: 4/12;
+    grid-row: 32;
+  }
+  .playground-10 {
+    grid-column: 4/12;
+    grid-row: 43;
+  }
+  .playground-11 {
+    grid-column: 4/12;
+    grid-row: 54;
+  }
+  .playground-12 {
+    grid-column: 17/28;
+    grid-row: 40;
+  }
+  .playground-13 {
+    grid-column: 6/15;
+    grid-row: 66;
+  }
+  .playground-14 {
+    grid-column: 19/27;
+    grid-row: 71;
+  }
+  .playground-15 {
+    grid-column: 4/21;
+    grid-row: 105;
+  }
+  .playground-16 {
+    grid-column: 13/28;
+    grid-row: 89;
+  }
+  .logo {
+    padding-top: 5px;
+    width: 3rem;
+  }
 }
 
 /* LARGE
 DEVICES
-(desktops, 1000px and up) */
-@media (min-width: 1000px) {
-}
-
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
@@ -996,31 +1176,13 @@ DEVICES
     font-size: 1.625rem;
   }
 
-  .logo {
-    width: 3rem;
-  }
-
   .hero {
     min-height: 80vh;
-  }
-
-  .hero-headline-wrapper {
-    padding: 4rem 10rem;
   }
 
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 1rem;
-  }
-
-  /* Grayscale filter with full-colour on hover and tap */
-  .work-page-grid-item a.grayscale img {
-    filter: grayscale(100);
-  }
-
-  .work-page-grid-item > a.grayscale:active img,
-  .work-page-grid-item > a.grayscale:hover img {
-    filter: grayscale(0);
   }
 
   .global-footer {
@@ -1069,6 +1231,12 @@ DEVICES
     align-self: end;
   }
 
+  .arrow-navigation {
+    padding-top: 2rem;
+    justify-content: center;
+    padding-right: 3rem;
+  }
+
   /* Padding around work grid and project page */
   .portfolio,
   .project-wrapper {
@@ -1095,11 +1263,6 @@ DEVICES
     width: 65%;
   }
 
-  .project-image {
-    min-height: 70vh;
-    /* This should be deleted if you want to remove space between project images on project pages */
-  }
-
   .project-image-container {
     flex-direction: row;
   }
@@ -1114,7 +1277,7 @@ DEVICES
   .grid-container {
     display: grid;
     grid-template-columns: repeat(42, 1fr);
-    grid-template-rows: repeat(121, 2.06666666666vh);
+    grid-template-rows: repeat(115, 2.06666666666vh);
     padding: 2.3rem;
     /* Top Right Bottom Left */
   }
