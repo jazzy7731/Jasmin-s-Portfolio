@@ -37,13 +37,12 @@
                     <p class="project-description">Punk’s not Dead it just went POP! Is a music festival celebrating the revival of punk music with a twist of 21st century pop. The project showcases pop punk artists in a collage style heavily inspired by punk posters from the 80s.</p>
                 </div>
 
-                <ul class="project-navigation">
+                <div class="project-navigation">
                     <div class=" arrow-navigation">
-                        <a href="project-1.html" class="arrow_left" class="arrow-ease"></a>
-                        <a href="project-3.html" class="arrow_right" class="arrow-ease"></a>
+                        <a href="project-1.html" class="arrow_left"></a>
+                        <a href="project-3.html" class="arrow_right"></a>
                     </div>
-
-                </ul>
+                </div>
             </aside>
             <main class="project-details">
                 <div class="project-image"><img src="assets/project-2/Jasmin-linton-music-festival-Poster-ripped-wall.jpg" alt="Pop Punk Music Festival ripped poster"></div>
@@ -63,55 +62,50 @@
                 <h2 class="footer-heading">Where to find me</h2>
                 <ul class="awards-list">
                     <li class="social-item">
-                        <a href="#" class="fa fa-instagram" style="padding: 10px;"></a>
-                        <a href="#" class="fa fa-behance" style="padding: 10px;"></a>
-                        <a href="#" class="fa fa-linkedin" style="padding: 10px;"></a>
-                        <a href="#" class="fa fa-envelope" style="padding: 10px;"></a>
-                        <a href="#" class="fa fa-dribbble" style="padding: 10px;"></a>
+                        <a href="https://www.instagram.com/jasmin.graphixs/" class="fa fa-instagram" style="padding: 10px"></a>
+                        <a href="https://www.behance.net/jasminlinton" class="fa fa-behance" style="padding: 10px"></a>
+                        <a href="https://www.linkedin.com/in/jasmin-linton-460133220/" class="fa fa-linkedin" style="padding: 10px"></a>
+                        <a href="mailto:jasminlinton7731@gmail.com" class="fa fa-envelope" style="padding: 10px"></a>
+                        <a href="https://dribbble.com/jasmin_linton" class="fa fa-dribbble" style="padding: 10px"></a>
                     </li>
                 </ul>
-                <h2 class="footer-heading" style="margin-top: 2rem;">Bits and Bobs</h2>
+                <h2 class="footer-heading" style="margin-top: 2rem">Bits and Bobs</h2>
                 <ul class="awards-list">
                     <li class="award-item">
-                        <a>WSS Graphic Design Award 2019, 2020
-                        </a>
+                        <p>WSS Graphic Design Award 2019, 2020
+                        </p>
                     </li>
                     <li class="award-item">
-                        <a>District Authority Scholarship for Fine Arts 2020
-                        </a>
+                        <p>District Authority Scholarship for Fine Arts 2020
+                        </p>
                     </li>
                     <li class="award-item">
-                        <a>Two time SLAM! Contest Winner 2021 and 2022
-                        </a>
-
-                    </li>
-
-                    <li class="footer-item-4" style="margin-top: 6rem;">
-                        <p class="fineprint">&copy; 2023. Handcrafted with
-                            <span class="heart">❤</span>
-                            + Flexbox + CSS Grid by me!</p>
+                        <p>Two time SLAM! Contest Winner 2021 and 2022
+                        </p>
                     </li>
                 </ul>
             </li>
+            <li class="footer-item-4" style="margin-top: 6rem;">
+                <p class="fineprint">&copy; 2023. Handcrafted by me!</p>
+            </li>
+        </ul>
+        <div id="myID" class="bottomMenu hide">
+            <a href="project-2.html">Next Project</a>
+        </div>
 
-            <div id="myID" class="bottomMenu hide">
-                <a href="project-2.html">Next Project</a>
-            </div>
+        <script type="text/javascript">
+            myID = document.getElementById("myID");
 
-            <script type="text/javascript">
-                myID = document.getElementById("myID");
+            var myScrollFunc = function () {
+                var y = window.scrollY;
+                if (y >= 800) {
+                    myID.className = "bottomMenu show"
+                } else {
+                    myID.className = "bottomMenu hide"
+                }
+            };
 
-                var myScrollFunc = function () {
-                    var y = window.scrollY;
-                    if (y >= 800) {
-                        myID.className = "bottomMenu show"
-                    } else {
-                        myID.className = "bottomMenu hide"
-                    }
-                };
-
-                window.addEventListener("scroll", myScrollFunc);
-            </script>
-        </body>
+            window.addEventListener("scroll", myScrollFunc);
+        </script>
     </body>
 </html>
