@@ -394,7 +394,7 @@ a:active {
 */
 
 .hero {
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -1255,7 +1255,7 @@ DEVICES
   /* Padding around work grid and project page */
   .portfolio,
   .project-wrapper {
-    padding: 0.5rem;
+    padding: 0.9rem;
   }
 
   /* Project Page Flex Direction on Large Devices */
