@@ -597,7 +597,10 @@ input {
 }
 
 .parapgraph {
-  line-height: 1.5rem;
+  line-height: 1.7rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 2rem;
 }
 
 /* Global Footer
@@ -645,6 +648,7 @@ input {
 .footer-item-4 {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
+  margin-bottom: 2rem;
 }
 
 .awards-list {
@@ -732,7 +736,6 @@ input {
 
 .project-details {
   width: 100%;
-  padding: 1rem;
 }
 
 /* 
@@ -1240,6 +1243,7 @@ DEVICES
     grid-column: 1 / 4;
     text-align: center;
     align-self: end;
+    margin-bottom: 2rem;
   }
 
   .hero-headline-wrapper {
