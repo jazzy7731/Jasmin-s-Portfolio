@@ -829,6 +829,36 @@ input {
   z-index: 100;
 }
 
+.gallery {
+  margin: 30px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.illustration {
+  width: 23rem;
+  height: auto;
+  object-fit: cover;
+}
+
+.illustration2 {
+  width: 70rem;
+  height: auto;
+  object-fit: cover;
+}
+
+.illustration:hover {
+  transform: scale(1.2);
+  transition-duration: 1s;
+}
+
+.illustration2:hover {
+  transform: scale(1.2);
+  transition-duration: 1s;
+}
+
 /*
 ███████ ██   ██ ██████  ███████ ██████  ██ ███    ███ ███████ ███    ██ ████████ ███████ 
 ██       ██ ██  ██   ██ ██      ██   ██ ██ ████  ████ ██      ████   ██    ██    ██      
